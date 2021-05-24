@@ -55,13 +55,13 @@ class Contact extends React.Component {
                 </div>
                 <ul className="social-list">
                   <li>
-                    <a href="https://www.facebook.com/kiravi2020"><i className="fa fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/kiran.designlife"><i className="fa fa-facebook"></i></a>
                   </li>
                   <li>
-                    <a href="https://instagram.com/kiran.kumar13"><i className="fa fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/coach_kiran"><i className="fa fa-instagram"></i></a>
                   </li>
                   <li>
-                    <a href="https://www.youtube.com/user/mrboxc1"><i className="fa fa-youtube-play"></i></a>
+                    <a href="https://www.youtube.com/c/GrowthExpress"><i className="fa fa-youtube-play"></i></a>
                   </li>
                 </ul>
               </div>

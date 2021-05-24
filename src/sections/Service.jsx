@@ -44,9 +44,9 @@ class Service extends React.Component {
                                     </div>
                                     <div className="col-sm-10 col-md-10">
                                         <h5>Service 01</h5>
-                                        <h4>Personality Development</h4>
+                                        <h4>Personal Growth Program (PGP) Tracker</h4>
                                         <p>Your daily habits today determines your future tomorrow.</p>
-                                        <p>If you seek growth, we have a platform for you!</p>
+                                        <p>We know that you know it all, but still struggling to bring momentum in life? This tool is for you!</p>
                                     </div>
                                 </div>
                             </div>
@@ -59,8 +59,8 @@ class Service extends React.Component {
                                     </div>
                                     <div className="col-sm-10 col-md-10">
                                         <h5>Service 02</h5>
-                                        <h4>Coaching and Mentorship</h4>
-                                        <p> A mentor is someone who sees more talent and ability within you, than you see in yourself, and helps bring it out of you. A coach is someone who helps you identify your own blindspots giving you a nudge.Everyone on this earth needs a mentor and a coach.</p>
+                                        <h4>Coaching & Mentoring | Life Skills</h4>
+                                        <p> A mentor sees talent and ability within you than you see in yourself and helps bring it out of you through personal experience. A coach is someone who supports and works closely, identifying your blindspots and walking the journey with you.</p>
                                         <p>Do you have one?</p>
                                     </div>
                                 </div>
@@ -74,7 +74,7 @@ class Service extends React.Component {
                                     </div>
                                     <div className="col-sm-10 col-md-10">
                                         <h5>Service 03</h5>
-                                        <h4>Health and Wellness</h4>
+                                        <h4>Health & Wellness At Home </h4>
                                         <p>Time and health are two precious assets that we don't recognize and appreciate until they have been depleted.</p>
                                         <p>We can't control time but we can surely maintain our health</p>
                                     </div>

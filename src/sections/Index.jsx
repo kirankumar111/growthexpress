@@ -36,7 +36,7 @@ export default class Index extends React.Component {
         <Service />
         <Portfolio />
         <Testimonial />
-        <Stats />
+        {/* <Stats /> */}
         <Blogs />
         <Contact />
         <Map />

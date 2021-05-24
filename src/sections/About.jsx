@@ -47,13 +47,10 @@ class About extends React.Component {
                   <div id="about-right">
                     <p>
                       We are a group of passionate folks who are a big believer
-                      of possibility thinking. Most of us come from typical
-                      average backgrounds from different parts of India.
+                      of possibility thinking.
                     </p>
                     <p>
-                      Everything we do, we believe in challenging the status
-                      quo. Our work revolves around the purpose of creating a
-                      positive impact on people's lives.
+                      We started our journey in January 2020 with a book club & growth events with a coaching setup to help people apply their learnings in life. 
                     </p>
                   </div>
                 </div>
@@ -82,9 +79,7 @@ class About extends React.Component {
                     <h3>Mission</h3>
                     <hr />
                     <p>
-                      Today the only mission of ours is to empower every dreamer
-                      who has a dream and willingness to put in work but doesn't
-                      have an opportunity.
+                      We are on a mission of impacting 1 million people in the area of effecting communication and life skills by 2024.
                     </p>
                   </div>
                 </div>
@@ -98,7 +93,7 @@ class About extends React.Component {
                     <hr />
                     <p>
                       Leaders biggest responsibility is to devleop new leaders.
-                      We believe in creating entrepreneurs who can positively
+                      We believe in identifying those who can positively
                       add value to people's lives and impact the world for a
                       better cause.
                     </p>
@@ -110,9 +105,7 @@ class About extends React.Component {
                     <h3>Passion</h3>
                     <hr />
                     <p>
-                      "Personal Growth is the key to happiness." Our passion is
-                      to inculcate habits within people which would fuel them
-                      towards their vision overcoming fear and belief issues.
+                      Passion without production is a hobby! We believe in helping people to discover and convert their passion into production.
                     </p>
                   </div>
                 </div>

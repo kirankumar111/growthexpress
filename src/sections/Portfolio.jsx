@@ -32,7 +32,7 @@ class Portfolio extends React.Component {
                     <div id="isotope-filters">
                         <button className="btn active" data-filter="*"><span>All</span></button>
                         <button className="btn" data-filter=".logo"><span>Public Speaking</span></button>
-                        <button className="btn" data-filter=".web"><span>Business Partnership</span></button>
+                        <button className="btn" data-filter=".web"><span>Partnerships & Collaborations</span></button>
                         <button className="btn" data-filter=".mobile"><span>Effective Communication</span></button>
                         <button className="btn" data-filter=".desktop"><span>Mentorship & Coaching</span></button>
                     </div>
