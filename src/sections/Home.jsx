@@ -34,10 +34,10 @@ class Home extends React.Component {
   renderLander() {
     return (
       <section id="home">
-        <video id="home-bg-video" poster="video/kiravi.jpg" autoPlay loop muted>
-          <source src="video/solo.mp4" type="video/mp4" />
+        <video id="home-bg-video" poster="video/kiravi.jpeg" autoPlay loop muted>
+          {/* <source src="video/solo.mp4" type="video/mp4" />
           <source src="video/solo.ogv" type="video/ogg" />
-          <source src="video/solo.webm" type="video/webm" />
+          <source src="video/solo.webm" type="video/webm" /> */}
         </video>
         <div id="home-overlay"></div>
         <div id="home-content">
@@ -76,10 +76,10 @@ class Home extends React.Component {
   renderUser() {
     return (
       <section id="home">
-        <video id="home-bg-video" poster="video/kiravi.jpg" autoplay loop muted>
-          <source src="video/solo.mp4" type="video/mp4" />
+        <video id="home-bg-video" poster="video/kiravi.jpeg" autoplay loop muted>
+          {/* <source src="video/solo.mp4" type="video/mp4" />
           <source src="video/solo.ogv" type="video/ogg" />
-          <source src="video/solo.webm" type="video/webm" />
+          <source src="video/solo.webm" type="video/webm" /> */}
         </video>
         <div id="home-overlay"></div>
         <div id="home-content">
