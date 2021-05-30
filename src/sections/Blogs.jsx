@@ -32,7 +32,7 @@ class Blogs extends React.Component {
                   </h2>
                 </div>
                 <p>Build your brand!</p>
-                <div id="blog-btn">
+                {/* <div id="blog-btn">
                   <a
                     className="btn btn-general btn-yellow"
                     href="#"
@@ -40,7 +40,7 @@ class Blogs extends React.Component {
                     role="button"
                     >View All Posts</a
                   >
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="col-sm-8 col-md-7 wow fadeInUp" data-wow-duration="1s">
@@ -48,8 +48,8 @@ class Blogs extends React.Component {
                 <div className="col-sm-6 col-md-6">
                   <div className="blog-post">
                     <h4>Do you have an Eagle attitude?</h4>
-                    <p>#growth #attitude #onedayatatime</p>
-                    <a href="https://www.linkedin.com/pulse/do-you-have-eagle-attitude-kiran-kumar/?trackingId=9qoBt%2B%2BbJYVlKFnFkkArfw%3D%3D" target="_blank">Read More</a>
+                    <p>#applied learnings</p>
+                    <a href="https://www.linkedin.com/pulse/do-you-have-eagle-attitude-kiran-kumar/?trackingId=9qoBt%2B%2BbJYVlKFnFkkArfw%3D%3D" target="_blank" rel="noopener noreferrer">Read More</a>
                     <div className="post-meta">
                       <div className="row">
                         <div className="col-xs-5 col-sm-6 col-md=6">
@@ -72,8 +72,8 @@ class Blogs extends React.Component {
                 <div className="col-sm-6 col-md-6">
                   <div className="blog-post">
                     <h4>How to cope with Negative thoughts/Negativity</h4>
-                    <p>#growth #attitude #onedayatatime</p>
-                    <a href="https://www.linkedin.com/pulse/how-cope-negative-thoughtsnegativity-bharat-pinninti/" target="_blank">Read More</a>
+                    <p>#applied learnings</p>
+                    <a href="https://www.linkedin.com/pulse/how-cope-negative-thoughtsnegativity-bharat-pinninti/" target="_blank" rel="noopener noreferrer">Read More</a>
                     <div className="post-meta">
                       <div className="row">
                         <div className="col-xs-5 col-sm-6 col-md=6">

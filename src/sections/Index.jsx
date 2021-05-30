@@ -8,7 +8,7 @@ import Statement from './Statement';
 import Service from './Service';
 import Portfolio from './Portfolio';
 import Blogs from './Blogs';
-import Stats from './Stats';
+// import Stats from './Stats';
 import Testimonial from  './Testimonial';
 import Contact from './Contact';
 import Map from './Map';
