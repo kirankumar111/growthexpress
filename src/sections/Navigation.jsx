@@ -4,19 +4,20 @@ class Navigation extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      page: 'HOME'
+      page: 'HOME',
+      logo: 'img/logo/logo.png',
     };
   }
     renderLander() {
     return (
-    <header>
+      <header>
         <nav className="navbar navbar-fixed-top">
           <div className="container-fluid">
             <div className="site-nav-wrapper">
               <div className="navbar-header">
                 <span id="mobile-nav-open-btn">&#9776;</span>
                 <a href="#home" className="navbar-brand smooth-scroll">
-                  <img src="img/logo/logo.png" alt="logo" />
+                  <img src={this.state.logo} alt="logo" />
                 </a>
               </div>
               <div className="container-fluid">

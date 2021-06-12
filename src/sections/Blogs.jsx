@@ -1,12 +1,11 @@
 import React from 'react';
-
+import BlogElement from '../components/blogElements';
 
 class Blogs extends React.Component {
   constructor(props) {
     super();
     this.state = {
-      isLoading: true,
-      patients: []
+      isLoading: true
     };
   }
   async componentDidMount() {
@@ -44,56 +43,7 @@ class Blogs extends React.Component {
               </div>
             </div>
             <div className="col-sm-8 col-md-7 wow fadeInUp" data-wow-duration="1s">
-              <div className="row">
-                <div className="col-sm-6 col-md-6">
-                  <div className="blog-post">
-                    <h4>Do you have an Eagle attitude?</h4>
-                    <p>#applied learnings</p>
-                    <a href="https://www.linkedin.com/pulse/do-you-have-eagle-attitude-kiran-kumar/?trackingId=9qoBt%2B%2BbJYVlKFnFkkArfw%3D%3D" target="_blank" rel="noopener noreferrer">Read More</a>
-                    <div className="post-meta">
-                      <div className="row">
-                        <div className="col-xs-5 col-sm-6 col-md=6">
-                          <p>
-                            <img
-                              src="img/blog/user-1.jpg"
-                              className="img-circle"
-                              alt="author"
-                            />
-                            Kiran Kumar
-                          </p>
-                        </div>
-                        <div className="col-xs-7 col-sm-6 col-md=6">
-                          <p className="text-right">August 28th 2019</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-sm-6 col-md-6">
-                  <div className="blog-post">
-                    <h4>How to cope with Negative thoughts/Negativity</h4>
-                    <p>#applied learnings</p>
-                    <a href="https://www.linkedin.com/pulse/how-cope-negative-thoughtsnegativity-bharat-pinninti/" target="_blank" rel="noopener noreferrer">Read More</a>
-                    <div className="post-meta">
-                      <div className="row">
-                        <div className="col-xs-5 col-sm-6 col-md=6">
-                          <p>
-                            <img
-                              src="img/blog/user-2.jpg"
-                              className="img-circle"
-                              alt="author"
-                            />
-                            Bharat Pinninti
-                          </p>
-                        </div>
-                        <div className="col-xs-7 col-sm-6 col-md=6">
-                          <p className="text-right">July 4th 2019</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <BlogElement />
             </div>
           </div>
         </div>

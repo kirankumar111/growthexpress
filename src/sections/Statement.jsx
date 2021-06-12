@@ -6,7 +6,7 @@ class Statement extends React.Component {
     super();
     this.state = {
       isLoading: true,
-      patients: []
+      quote: "The successful warrior is the average man, with laser-like focus.."
     };
   }
   async componentDidMount() {
@@ -25,7 +25,7 @@ class Statement extends React.Component {
               <div className="col-md-12 wow fadeIn">
                 <div id="tech-statement" className="text-center">
                   <h3>
-                    <i className="fa fa-quote-left"></i>The successful warrior is the average man, with laser-like focus..<i className="fa fa-quote-right"></i>
+                    <i className="fa fa-quote-left"></i>{this.state.quote}<i className="fa fa-quote-right"></i>
                   </h3>
                   <p>- Bruce Lee -</p>
                 </div>

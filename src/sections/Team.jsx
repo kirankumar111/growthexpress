@@ -1,6 +1,6 @@
 import React from 'react';
-import TeamList from '../components/TeamList';
-import ProgressList from '../components/progressElements';
+import TeamElements from '../components/teamElements';
+import ProgressElements from '../components/progressElements';
 
 class Team extends React.Component {
   constructor(props) {
@@ -39,8 +39,8 @@ class Team extends React.Component {
                   <p>{this.state.describe}</p>
                 </div>
               </div>
-              <TeamList />
-              <ProgressList />
+              <TeamElements />
+              <ProgressElements />
             </div>
           </div>
         </div>

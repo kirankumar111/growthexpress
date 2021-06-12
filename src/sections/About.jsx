@@ -6,7 +6,13 @@ class About extends React.Component {
     super();
     this.state = {
       isLoading: true,
-      patients: []
+      aboutContent:
+        'We are a group of passionate folks who are a big believer of possibility thinking. We started our journey in January 2020 with a book club & growth events having a coaching & mentoring setup to help people apply their learnings in life.',
+      aboutImg: 'img/about/about.png',
+      missionStatement:"We are on a mission of impacting 1 million people in the area of effecting communication and life skills by 2024.",
+      visionStatement:"Leaders biggest responsibility is to devleop new leaders.We believe in identifying those who can positively add value to people's lives and impact the world for a better cause.",
+      passionStatement:"Passion without production is a hobby! We believe in helping people to discover and convert their passion into production"
+
     };
   }
   async componentDidMount() {
@@ -45,13 +51,7 @@ class About extends React.Component {
                   data-wow-duration="1s"
                 >
                   <div id="about-right">
-                    <p>
-                      We are a group of passionate folks who are a big believer
-                      of possibility thinking.
-                    </p>
-                    <p>
-                      We started our journey in January 2020 with a book club & growth events with a coaching setup to help people apply their learnings in life. 
-                    </p>
+                    <p>{this.state.aboutContent}</p>
                   </div>
                 </div>
               </div>
@@ -59,7 +59,7 @@ class About extends React.Component {
                 <div className="col-md-12 wow fadeInUp" data-wow-duration="2s">
                   <div id="about-bottom">
                     <img
-                      src="img/about/about.png"
+                      src={this.state.aboutImg}
                       alt="About Us"
                       className="img-responsive"
                     />
@@ -78,9 +78,7 @@ class About extends React.Component {
                     <i className="fa fa-rocket"></i>
                     <h3>Mission</h3>
                     <hr />
-                    <p>
-                      We are on a mission of impacting 1 million people in the area of effecting communication and life skills by 2024.
-                    </p>
+                    <p>{this.state.missionStatement}</p>
                   </div>
                 </div>
                 <div
@@ -91,12 +89,7 @@ class About extends React.Component {
                     <i className="fa fa-eye"></i>
                     <h3>Vision</h3>
                     <hr />
-                    <p>
-                      Leaders biggest responsibility is to devleop new leaders.
-                      We believe in identifying those who can positively
-                      add value to people's lives and impact the world for a
-                      better cause.
-                    </p>
+                    <p>{this.state.visionStatement}</p>
                   </div>
                 </div>
                 <div className="col-sm-4 col-md-4 wow fadeInRight">
@@ -104,9 +97,7 @@ class About extends React.Component {
                     <i className="fa fa-pencil"></i>
                     <h3>Passion</h3>
                     <hr />
-                    <p>
-                      Passion without production is a hobby! We believe in helping people to discover and convert their passion into production.
-                    </p>
+                    <p>{this.state.passionStatement}</p>
                   </div>
                 </div>
               </div>

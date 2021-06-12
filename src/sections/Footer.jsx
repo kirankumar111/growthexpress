@@ -5,8 +5,7 @@ class Footer extends React.Component {
   constructor(props) {
     super();
     this.state = {
-      isLoading: true,
-      patients: []
+      isLoading: true
     };
   }
   async componentDidMount() {
