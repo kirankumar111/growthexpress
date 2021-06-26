@@ -42,7 +42,7 @@ class Contact extends React.Component {
                           </li>
                           <li>
                             <i className="fa fa-envelope"></i
-                            ><span>kumar.kiran@ownyourlife.in</span>
+                            ><span>kiran.kumar@growthexpress.in</span>
                           </li>
                           <li>
                             <i className="fa fa-map-marker"></i>
