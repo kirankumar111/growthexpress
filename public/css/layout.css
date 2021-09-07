@@ -1,0 +1,1113 @@
+body,
+ul {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    color: #222;
+    font-family: 'Breuer Text';
+}
+
+p {
+    margin: 0px;
+    font-size: 1rem;
+    color: #222;
+    line-height: 1.8rem;
+    font-family: 'Breuer Text';
+}
+
+ul,
+li {
+    list-style: none;
+    position: relative;
+}
+
+:focus,
+.btn.focus,
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+section {
+    position: relative;
+    padding: 5.5rem 0rem;
+}
+
+section.banner {
+    padding: 0px;
+}
+
+a,
+button {
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.aboutus::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url(../img/about/about.png) no-repeat;
+    background-size: contain;
+    width: 500px;
+    height: 100%
+}
+
+.mybutton {
+    border-radius: 20px;
+    border: #333 1px solid;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 1.2rem;
+}
+
+section.yourself::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../img/about/aboutbefore.png) no-repeat;
+    background-size: contain;
+    width: 35%;
+    height: 394px;
+}
+
+section.aboutself::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../img/about/aboutself.png) no-repeat;
+    background-size: contain;
+    width: 15%;
+    height: 324px;
+    background-position: top center;
+}
+
+section.yourself::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url(../img/aboutafter.png) no-repeat;
+    background-size: contain;
+    width: 35%;
+    height: 143px;
+    background-position: bottom right;
+}
+
+section.aboutself::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url(../img/aboutselfafter.png) no-repeat;
+    background-size: contain;
+    width: 50%;
+    height: 100%;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Breuer Condensed';
+}
+
+section.yourself .title {
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+section.aboutus .title::before,
+section.yourself .title::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: -30px;
+    background: url(../img/Circle&Star.png) no-repeat;
+    background-size: contain;
+    width: 160px;
+    height: 192px;
+    z-index: -1;
+}
+
+section.yourself .title::before {
+    width: 360px;
+    height: 362px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -80px;
+}
+
+section.yourself .title span {
+    display: block;
+}
+
+.title {
+    font-size: 3.2rem;
+    font-weight: 400;
+    position: relative;
+}
+
+.title span {
+    font-weight: 700;
+}
+
+.paddings {
+    padding-right: 6rem;
+}
+
+.d-flex.align-item-center {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+div#youtube {
+    margin-bottom: 5rem;
+}
+
+#aboutus .owl-nav {
+    position: absolute;
+    width: 100%;
+    top: 35%;
+    margin: 0;
+}
+
+#aboutus .owl-nav button.owl-prev {
+    left: -30px;
+    background: #51a4bd;
+    top: 0;
+}
+
+#aboutus .owl-nav button.owl-next {
+    background: #51a4bd;
+    right: -30px;
+}
+
+.listcategoires ul li a {
+    font-size: 4.5rem;
+    font-weight: 500;
+    position: relative;
+    color: #51a4bd;
+}
+
+.listcategoires {
+    margin: 10rem 0 0;
+}
+
+.listcategoires ul li a::before {
+    content: "";
+    position: absolute;
+    left: auto;
+    top: 33px;
+    height: 20px;
+    width: 20px;
+    background: url(../img/arrow.png) no-repeat;
+    background-size: contain;
+    right: -30px;
+}
+
+.listcategoires ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: auto;
+    bottom: -10px;
+    height: 2px;
+    width: 100%;
+    background: #51a4bd;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.listcategoires ul li a:hover {
+    color: #222;
+}
+
+.listcategoires ul li a:hover::after {
+    background: #000;
+}
+
+.centeralign {
+    text-align: center;
+}
+
+.circlestra {
+    display: inline-block;
+    text-align: center;
+    margin: 2.5rem auto;
+    width: 100%;
+}
+
+.sectiontitle {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sectiontitle h2 {
+    font-size: 3.2rem;
+    font-family: 'Breuer Condensed';
+    border-bottom: #51a4bd 1px solid;
+    display: inline-block;
+}
+
+.sectiontitle span {
+    font-weight: 600;
+}
+
+.circleimage {
+    margin: 0 0 0px;
+    padding: 15px;
+}
+
+section.aboutself {
+    margin-top: 3rem;
+}
+
+section.aboutself .aboutthumbnail {
+    padding: 0 50px;
+}
+
+.thumnails {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.thumnails img {
+    width: 100%;
+}
+
+.thumnails::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #51a4bd94;
+    height: 100%;
+    width: 100%;
+}
+
+.thumnails .absoluteposition {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thumnails .absoluteposition .workstationtitle {
+    font-size: 2.2rem;
+    display: inline-block;
+    width: 100%;
+    font-weight: 500;
+}
+
+.thumnails .absoluteposition .mybutton {
+    background: #fff;
+    padding: 2px 17px;
+    font-size: 1rem;
+}
+
+.testimonials p {
+    font-size: 1.6rem;
+    color: #51a4bd;
+    line-height: 2.5rem;
+}
+
+.userpiec {
+    overflow: hidden;
+    background-size: contain;
+    height: 350px;
+    width: 350px;
+    background: #d6edf0;
+    border-radius: 50%;
+    padding: 0;
+    position: relative;
+    margin: auto;
+}
+
+.userpiec img {
+    object-fit: cover;
+    object-position: bottom;
+    margin: auto;
+    position: absolute;
+    z-index: 2;
+    max-width: 100% !important;
+    bottom: 0px;
+}
+
+.otherinfo {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.otherinfo .username {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.otherinfo::before {
+    content: "";
+    position: absolute;
+    left: auto;
+    right: 110px;
+    height: 50px;
+    width: 50px;
+    background: url(../img/star.png) no-repeat;
+    background-size: contain;
+    z-index: 9;
+    top: 10px;
+}
+
+.socialmedai {
+    position: absolute;
+    left: 0;
+    width: auto;
+    right: auto;
+    top: 10%;
+    z-index: 9;
+}
+
+.socialmedai ul li {
+    display: block;
+    clear: both;
+    margin-bottom: 20px;
+}
+
+.socialmedai ul li a {
+    padding: 10px;
+    color: #fff;
+    display: inline-block;
+    line-height: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.userinfo {
+    position: relative;
+}
+
+li.youtube {
+    background: #f51c0d;
+}
+
+li.twitter {
+    background: #1ca1f2;
+}
+
+li.linkedin {
+    background: #0078b8;
+}
+
+li.facebook {
+    background: #3b5999;
+}
+
+li.whatsapp {
+    background: #26d466;
+}
+
+.testimonials .owl-nav {
+    top: 30% !important;
+    position: absolute !important;
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+.testimonials .owl-nav button.owl-prev {
+    left: -30px !important;
+    background: #51a4bd !important;
+}
+
+.testimonials .owl-nav button.owl-next {
+    right: -30px !important;
+    background: #51a4bd !important;
+}
+
+.testimonials .owl-dots {
+    display: none;
+}
+
+.contactus .socialmedai {
+    position: relative;
+    margin-top: 3rem;
+}
+
+.contactus .socialmedai li {
+    width: 40px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
+p.bluetext {
+    font-size: 1.5rem;
+    color: #51a4bd;
+    line-height: 2rem;
+}
+
+.contactinfo {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.contactinfo li {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.contactinfo li a {
+    font-size: 1.3rem;
+    color: #222;
+    padding-left: 32px;
+}
+
+.contactinfo li img {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 26px;
+}
+
+.contactform {
+    padding: 10px 50px 40px;
+    border: #ddd 2px solid;
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 20px #ddd;
+}
+
+.contactform h4 {
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    background: #50a2bc;
+    padding: 8px 20px;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.contactform .form-group {
+    text-align: left;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.contactform .form-group label {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #50a2bc;
+    margin-bottom: 0;
+}
+
+.contactform .form-group input[type="text"],
+.contactform .form-group input[type="email"],
+.contactform .form-group input[type="number"] {
+    border: 0px;
+    border-bottom: #50a2bc 1px solid;
+    border-radius: 0px;
+    background: transparent;
+    color: #333;
+}
+
+.contactform .form-group textarea {
+    width: 100%;
+    border: 0px;
+    background: transparent;
+    color: #333;
+    border-bottom: #50a2bc 1px solid;
+}
+
+.contactform form {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.contactform::before {
+    content: "";
+    position: absolute;
+    left: auto;
+    right: 0px;
+    height: 100%;
+    width: 500px;
+    background: url(../img/contact.png) no-repeat;
+    background-size: contain;
+    z-index: -1;
+    top: 0;
+    background-position: right center;
+}
+
+.contactform [type="submit"] {
+    background: #50a2bc;
+    color: #fff;
+    border: #50a2bc 1px solid;
+}
+
+.contactus .title::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: -40px;
+    background: url(../img/Circle&Star.png) no-repeat;
+    background-size: contain;
+    width: 160px;
+    height: 172px;
+    z-index: -1;
+}
+
+.contactus::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: -40px;
+    background: url(../img/cnt.png) no-repeat;
+    background-size: contain;
+    width: 32%;
+    height: 100%;
+    z-index: -1;
+}
+
+.contactus::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: auto;
+    bottom: 0px;
+    background: url(../img/cntaft.png) no-repeat;
+    background-size: contain;
+    width: 70%;
+    height: 168px;
+    z-index: -1;
+    background-position: bottom;
+}
+
+.testimonials::before {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 0;
+    background: url(../img/testibg.png) no-repeat;
+    background-size: contain;
+    width: 70%;
+    height: 168px;
+    z-index: -1;
+    background-position: top right;
+}
+
+textarea {
+    max-height: 120px;
+    height: 80px;
+    padding: 10px;
+}
+
+footer h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: auto;
+    bottom: -10px;
+    height: 2px;
+    width: 90px;
+    background: #fff;
+}
+
+footer h4::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: auto;
+    bottom: -10px;
+    height: 2px;
+    width: 45px;
+    background: #000000;
+}
+
+footer h4 {
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+footer ul.footermenu li {
+    width: 100%;
+    margin-bottom: 6px;
+    line-height: normal;
+    float: left;
+}
+
+footer ul.footermenu li a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+footer {
+    padding: 4rem 0 0;
+    background: #50a2bc;
+    margin-top: 3rem;
+}
+
+.scpy {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    padding: .5rem;
+    background: #296f86;
+    margin-top: 1.5rem;
+    color: #fff;
+}
+
+.postverticle {
+    position: relative;
+    border-radius: 40px;
+    overflow: hidden;
+    border: #50a2bc 1px solid;
+}
+
+.postverticle::before,
+.postverticle::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 20%;
+    background: #50a2bc;
+    width: 100%;
+}
+
+.bgcolor {
+    position: relative;
+    padding: 90px 10px;
+    background: #50a2bc;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.postverticle::before {
+    height: 40px
+}
+
+.bgcolor::after {
+    content: "";
+    position: absolute;
+    left: auto;
+    top: 0;
+    height: 100%;
+    background: url(../img/postpic.png) no-repeat;
+    width: 50%;
+    background-position: right;
+    background-size: contain;
+    right: 0;
+}
+
+.postverticle .postinfo {
+    padding: 10px 20px 200px;
+}
+
+.article .socialmedai {
+    top: 30%;
+}
+
+.postverticle img {
+    position: relative;
+    margin-top: 20px;
+}
+
+span.author {
+    float: right;
+    margin-top: 20px;
+}
+
+.postverticle .postinfo p {
+    font-size: 1.4rem;
+}
+
+.postverticle::after {
+    top: auto;
+    bottom: 0;
+}
+
+.bgcolor p {
+    font-size: 1.4rem;
+    color: #fff;
+    width: 50%;
+    padding: 10px 20px;
+}
+
+.bgcolor span.authorename {
+    color: #fff;
+}
+
+.article {
+    background: url(../img/articlebfr.png) no-repeat;
+    background-size: contain;
+    background-position: top center;
+}
+
+.authordata {
+    position: absolute;
+    top: auto;
+    bottom: 20px;
+    padding: 0px 15px;
+    z-index: 98;
+}
+
+.authordata .socialmedai {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    top: 0% !important;
+}
+
+.authordata .socialmedai li a {
+    padding: 0;
+}
+
+.authordata .socialmedai li {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    border-radius: 4px;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+
+.authorpic {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carousel-caption {
+    background: #d6eef0d6;
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    border-radius: 50%;
+    top: 20%;
+    bottom: auto;
+}
+
+.carousel-caption::before {
+    content: "";
+    position: absolute;
+    left: auto;
+    right: 50px;
+    height: 50px;
+    width: 50px;
+    background: url(../img/star.png) no-repeat;
+    background-size: contain;
+    z-index: 9;
+    top: 10px;
+}
+
+.carousel-caption h3 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.carousel-caption h3 span {
+    display: block;
+    font-weight: 600;
+}
+
+.carousel-caption p {
+    padding: 0px 30px;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.carousel-caption p span {
+    display: block;
+}
+
+.carousel-caption .centeralign {
+    width: 100%;
+}
+
+.carousel-caption a.btn.mybutton {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.banner a.btn.mybutton {
+    position: absolute;
+    top: auto;
+    left: auto;
+    right: auto;
+    margin: auto;
+    z-index: 99;
+    display: block;
+    bottom: 60px;
+    max-width: 190px;
+    float: none;
+    background: #fff;
+}
+
+.banner {
+    text-align: center;
+}
+
+.carousel-item a.btn.mybutton {
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .listcategoires ul li a {
+        font-size: 2.5rem;
+    }
+
+    .paddings {
+        padding-right: 0;
+    }
+
+    section.aboutus .title::before,
+    section.yourself .title::before {
+        left: -10px;
+        top: -30px;
+        background-size: contain;
+        width: 110px;
+        z-index: -1;
+    }
+
+    #aboutus .owl-nav button.owl-next {
+        background: #51a4bd;
+        right: 0;
+    }
+
+    #aboutus .owl-nav button.owl-prev {
+        left: 0px;
+        background: #51a4bd;
+        top: 0;
+    }
+
+    .youtube {
+        margin-top: 20px;
+    }
+
+    div#youtube {
+        margin-bottom: 3rem;
+    }
+
+    .listcategoires {
+        margin: 0rem 0 0;
+    }
+
+
+
+    .testimonials p {
+        font-size: 1.2rem;
+        color: #51a4bd;
+        line-height: 2rem;
+    }
+
+    .otherinfo::before {
+        right: 70px;
+    }
+
+    section.aboutself::after,
+    .aboutus::before,
+    .testimonials .owl-nav,
+    .contactus::before,
+    .bgcolor::after,
+    .postverticle::before,
+    .postverticle::after,
+    .contactform::before,
+    .banner a.btn.mybutton {
+        display: none;
+    }
+
+    section {
+        position: relative;
+        padding: 2.5rem 0rem;
+    }
+
+    section.aboutself::before {
+        width: 100%;
+        height: 100%;
+        background: #d6edf0
+    }
+
+    .circleimage {
+        padding: 10px
+    }
+
+    .owl-theme .owl-nav button.owl-next {
+        right: 0px !important
+    }
+
+    .owl-theme .owl-nav button.owl-prev {
+        left: 0px !important
+    }
+
+    section.aboutself .aboutthumbnail {
+        padding: 0px
+    }
+
+    .sectiontitle h2 {
+        font-size: 2.4rem;
+    }
+
+    .testimonials .owl-dots {
+        display: block;
+    }
+
+    .title {
+        font-size: 2.2rem;
+    }
+
+    .contactus .title::before {
+        left: -10px;
+        width: 130px;
+        height: 172px;
+        z-index: -1;
+    }
+
+    .bgcolor {
+        margin-top: 20px;
+        padding: 30px â€‹10px
+    }
+
+    .bgcolor p {
+        font-size: 1.4rem;
+        color: #fff;
+        width: 100%;
+        padding: 10px 20px;
+    }
+
+    .postverticle img {
+        display: none !important;
+    }
+
+    .postverticle .postinfo {
+        padding: 50px 0px
+    }
+
+    .postverticle .postinfo p {
+        padding: 30px 20px;
+        background: #fff
+    }
+
+    span.author {
+        margin-right: 0;
+        background: #fff;
+        width: 100%;
+        text-align: right;
+        margin-top: 0;
+        padding-bottom: 10px;
+        padding-right: 15px;
+    }
+
+    .authorpic img {
+        display: block !important;
+    }
+
+    .authordata .socialmedai li {
+        margin-right: 2px;
+    }
+
+    .authordata {
+        position: relative;
+    }
+
+    .article .socialmedai {
+        display: none;
+    }
+
+    .authordata .socialmedai {
+        display: flex !important;
+    }
+
+    .contactform {
+        padding: 10px 10px 40px;
+    }
+
+    .userinfo .socialmedai {
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .userinfo .socialmedai li {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+    }
+
+    .userinfo .socialmedai li a {
+        padding: 0;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .userpiec {
+        width: 190px;
+        height: 190px
+    }
+
+    .carousel-caption {
+        width: 170px;
+        height: 170px;
+        top: 0px
+    }
+
+    .carousel-caption h3 {
+        font-size: 1rem;
+    }
+
+    .carousel-caption p {
+        font-size: .8rem;
+        line-height: 1rem;
+    }
+
+    .carousel-caption::before {
+        right: 10px;
+        width: 30px;
+    }
+
+    .carousel-caption p span {
+        display: inline;
+    }
+
+    footer {
+        padding: 2rem 0 0;
+    }
+
+    .listcategoires ul li a::before {
+        top: 13px
+    }
+
+}

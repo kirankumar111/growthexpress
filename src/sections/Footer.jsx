@@ -1,12 +1,11 @@
-import React from 'react';
-
+import React from "react";
 
 class Footer extends React.Component {
   constructor(props) {
     super();
     this.state = {
       isLoading: true,
-      patients: []
+      patients: [],
     };
   }
   async componentDidMount() {
@@ -18,33 +17,119 @@ class Footer extends React.Component {
   }
   renderLander() {
     return (
-    <footer className="text-center">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-12">
-            <p>
-              Copyright &copy; 2021 All Rights Reserved By <span>Growth Express</span> Inc
-            </p>
+      <footer>
+        {/* <div className="container">
+          <div className="row">
+            <div className="col-lg-3 colmd-6 col-sm-6 col-6">
+              <div className="thumbfooter">
+                <h4>Navigation</h4>
+                <ul className="footermenu">
+                  <li>
+                    <a href="#">Link here</a>
+                  </li>
+                  <li>
+                    <a href="#">Link here</a>
+                  </li>
+                  <li>
+                    <a href="#">Link here</a>
+                  </li>
+                  <li>
+                    <a href="#">Link here</a>
+                  </li>
+                  <li>
+                    <a href="#">Link here</a>
+                  </li>
+                  <li>
+                    <a href="#">Link here</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-lg-3 colmd-6 col-sm-6 col-6">
+              <div className="thumbfooter">
+                <h4>Navigation</h4>
+                <ul className="footermenu">
+                  <li>
+                    <a href="#">Link here</a>
+                  </li>
+                  <li>
+                    <a href="#">Link here</a>
+                  </li>
+                  <li>
+                    <a href="#">Link here</a>
+                  </li>
+                  <li>
+                    <a href="#">Link here</a>
+                  </li>
+                  <li>
+                    <a href="#">Link here</a>
+                  </li>
+                  <li>
+                    <a href="#">Link here</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-lg-3 colmd-6 col-sm-6 col-6">
+              <div className="thumbfooter">
+                <h4>Navigation</h4>
+                <ul className="footermenu">
+                  <li>
+                    <a href="#">Link here</a>
+                  </li>
+                  <li>
+                    <a href="#">Link here</a>
+                  </li>
+                  <li>
+                    <a href="#">Link here</a>
+                  </li>
+                  <li>
+                    <a href="#">Link here</a>
+                  </li>
+                  <li>
+                    <a href="#">Link here</a>
+                  </li>
+                  <li>
+                    <a href="#">Link here</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-lg-3 colmd-6 col-sm-6 col-6">
+              <div className="thumbfooter">
+                <h4>Navigation</h4>
+                <ul className="footermenu">
+                  <li>
+                    <a href="#">Link here</a>
+                  </li>
+                  <li>
+                    <a href="#">Link here</a>
+                  </li>
+                  <li>
+                    <a href="#">Link here</a>
+                  </li>
+                  <li>
+                    <a href="#">Link here</a>
+                  </li>
+                  <li>
+                    <a href="#">Link here</a>
+                  </li>
+                  <li>
+                    <a href="#">Link here</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
+        </div> */}
+        <div className="scpy">
+          Copyright © 2021 All Rights Reserved By Growth Express Inc
         </div>
-      </div>
-      <a
-        href="#home"
-        id="back-to-top"
-        className="btn btn-sm btn-yellow btn-back-to-top smooth-scroll hidden-sm hidden-xs"
-        title="Home"
-        role="button"
-        ><i className="fa fa-angle-up"></i
-      ></a>
-    </footer>
+      </footer>
     );
   }
   render() {
-    return (
-      <div className="FooterDiv">
-        {this.renderLander()}
-      </div>
-    );
+    return <div className="FooterDiv">{this.renderLander()}</div>;
   }
 }
 

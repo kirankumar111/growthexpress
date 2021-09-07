@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Breuer Condensed';
+    src: url('BreuerCondensed-Bold.woff2') format('woff2'),
+        url('BreuerCondensed-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('MinionPro-Regular.woff2') format('woff2'),
+        url('MinionPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('MinionPro-BoldIt.woff2') format('woff2'),
+        url('MinionPro-BoldIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Breuer Condensed';
+    src: url('BreuerCondensed-Medium.woff2') format('woff2'),
+        url('BreuerCondensed-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Breuer Condensed';
+    src: url('BreuerCondensed-Regular.woff2') format('woff2'),
+        url('BreuerCondensed-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Breuer Condensed';
+    src: url('BreuerCondensed-Light.woff2') format('woff2'),
+        url('BreuerCondensed-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Breuer Text';
+    src: url('BreuerText-Regular.woff2') format('woff2'),
+        url('BreuerText-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Breuer Text';
+    src: url('BreuerText-Bold.woff2') format('woff2'),
+        url('BreuerText-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Breuer Text';
+    src: url('BreuerText-Medium.woff2') format('woff2'),
+        url('BreuerText-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Breuer Text';
+    src: url('BreuerText-Light.woff2') format('woff2'),
+        url('BreuerText-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

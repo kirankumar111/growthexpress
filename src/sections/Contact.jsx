@@ -1,12 +1,11 @@
-import React from 'react';
-
+import React from "react";
 
 class Contact extends React.Component {
   constructor(props) {
     super();
     this.state = {
       isLoading: true,
-      patients: []
+      patients: [],
     };
   }
   async componentDidMount() {
@@ -18,133 +17,150 @@ class Contact extends React.Component {
   }
   renderLander() {
     return (
-    <section id="contact">
-      <div className="content-box-lg">
+      <section id="contact" className="contactus">
         <div className="container">
           <div className="row">
-            <div className="col-md-6">
-              <div id="contact-left">
-                <div className="vertical-heading">
-                  <h5>Who We Are</h5>
-                  <h2>Get <br />In <strong>Touch</strong></h2>
+            <div className="col-xl-4 col-lg-4 col-md-5 col-sm-12 col-12">
+              <div className="d-flex align-item-center">
+                <div className="vcenter">
+                  <h3 className="title">
+                    Contact<span> Information</span>
+                  </h3>
+                  <p className="bluetext">
+                    Fill up the form and our Team will get back to you with in
+                    24 Hours.
+                  </p>
+                  <div className="contactinfo">
+                    <ul>
+                      <li>
+                        <img src="img/call.png" />
+                        <a href="tel:+91-8217019267">+91-8217019267</a>
+                      </li>
+                      <li>
+                        <img src="img/mail.png" />
+                        <a href="mailto:kiran.kumar@growthexpress.in">
+                          kiran.kumar@growthexpress.in
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">Koramangala, Bangalore, India</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="socialmedai">
+                    <ul>
+                      <li className="youtube">
+                        <a href="#">
+                          <i className="fa fa-youtube-play"></i>
+                        </a>
+                      </li>
+                      <li className="twitter">
+                        <a href="#">
+                          <i className="fa fa-twitter"></i>
+                        </a>
+                      </li>
+                      <li className="linkedin">
+                        <a href="#">
+                          <i className="fa fa-linkedin"></i>
+                        </a>
+                      </li>
+                      <li className="facebook">
+                        <a href="#">
+                          <i className="fa fa-facebook"></i>
+                        </a>
+                      </li>
+                      <li className="whatsapp">
+                        <a href="#">
+                          <i className="fa fa-whatsapp"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <p>
-                  Alone we can do so little, together we can do so much.
-                </p>
-                <div id="offices">
+              </div>
+            </div>
+            <div className="col-xl-8 col-lg-8 col-md-6 col-sm-12 col-12">
+              <div className="sectiontitle">
+                <div className="sectiontitle">
+                  <h2>
+                    Contact <span>Us</span>
+                  </h2>
+                </div>
+              </div>
+              <div className="contactform">
+                <h4>Any Question ro remarks? Just Write us a message!</h4>
+                <form name="enquire" method="post" action="#">
                   <div className="row">
-                    <div className="col-md-6">
-                      <div className="office">
-                        <h4>India</h4>
-                        <ul className="office-details">
-                          <li>
-                            <i className="fa fa-mobile"></i><span>+91-8217019267</span>
-                          </li>
-                          <li>
-                            <i className="fa fa-envelope"></i
-                            ><span>kiran.kumar@growthexpress.in</span>
-                          </li>
-                          <li>
-                            <i className="fa fa-map-marker"></i>
-                            <span>Koramangala, Bangalore, India</span>
-                          </li>
-                        </ul>
+                    <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+                      <div className="form-group">
+                        <label htmlFor="name">First Name</label>
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="exampleInputPassword1"
+                        />
+                      </div>
+                    </div>
+                    <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+                      <div className="form-group">
+                        <label htmlFor="lname">Last Name</label>
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="exampleInputPassword1"
+                        />
                       </div>
                     </div>
                   </div>
-                </div>
-                <ul className="social-list">
-                  <li>
-                    <a href="https://www.facebook.com/kiran.designlife"><i className="fa fa-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/coach_kiran"><i className="fa fa-instagram"></i></a>
-                  </li>
-                  <li>
-                    <a href="https://www.youtube.com/c/GrowthExpress"><i className="fa fa-youtube-play"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div id="contact-right">
-                <form>
-                  <h4>Contact Us</h4>
-                  <p>
-                    If your beliefs match with ours and you are looking for an opportunity, then reach us out to see if we can collaborate to create an postive impact on poeple's lives.
-                  </p>
-                  <div className="col-md-6 col-sm-6">
-                    <div className="form-group">
-                      <input
-                        type="text"
-                        className="form-control"
-                        id="name"
-                        placeholder="Your Name"
-                      />
+                  <div className="row">
+                    <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+                      <div className="form-group">
+                        <label htmlFor="name">Email</label>
+                        <input
+                          type="email"
+                          className="form-control"
+                          id="exampleInputPassword1"
+                        />
+                      </div>
+                    </div>
+                    <div className="col-lg-6 col-md-6 col-sm-12 col-12">
+                      <div className="form-group">
+                        <label htmlFor="lname">Phone</label>
+                        <input
+                          type="number"
+                          className="form-control"
+                          id="exampleInputPassword1"
+                        />
+                      </div>
                     </div>
                   </div>
-                  <div className="col-md-6 col-sm-6">
-                    <div className="form-group">
-                      <input
-                        type="email"
-                        className="form-control"
-                        id="email"
-                        placeholder="Email Address"
-                      />
+                  <div className="row">
+                    <div className="col-lg-12 col-md-12 col-sm-12 col-12">
+                      <div className="form-group">
+                        <label htmlFor="name">Message</label>
+                        <textarea className="msg"></textarea>
+                      </div>
                     </div>
                   </div>
-                  <div className="col-md-6 col-sm-6">
-                    <div className="form-group">
+                  <div className="row">
+                    <div className="col-lg-12 col-md-12 col-sm-12 col-12">
                       <input
-                        type="text"
-                        className="form-control"
-                        id="phone"
-                        placeholder="Phone No."
+                        type="submit"
+                        className="btn mybutton text-uppercase"
+                        value="Send message"
                       />
                     </div>
-                  </div>
-                  <div className="col-md-6 col-sm-6">
-                    <div className="form-group">
-                      <input
-                        type="text"
-                        className="form-control"
-                        id="subject"
-                        placeholder="Subject"
-                      />
-                    </div>
-                  </div>
-                  <div className="form-group">
-                    <textarea
-                      className="form-control"
-                      id="message"
-                      placeholder="Message"
-                    ></textarea>
-                  </div>
-                  <div id="submit-btn">
-                    <a
-                      className="btn btn-general btn-yellow"
-                      href="#"
-                      title="Submit"
-                      role="button"
-                      >Submit</a
-                    >
                   </div>
                 </form>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
+      </section>
     );
   }
   render() {
-    return (
-      <div className="ContactDiv">
-        {this.renderLander()}
-      </div>
-    );
+    return <div className="ContactDiv">{this.renderLander()}</div>;
   }
 }
 

@@ -7,12 +7,12 @@ import Statement from './Statement';
 import Service from './Service';
 import Portfolio from './Portfolio';
 import Blogs from './Blogs';
-import Stats from './Stats';
+import YourSelf from './YourSelf';
 import Testimonial from  './Testimonial';
 import Contact from './Contact';
-import Map from './Map';
+// import Map from './Map';
 import Footer from './Footer';
-import Login from './Login';
+// import Login from './Login';
 
 export default class Index extends React.Component {
 
@@ -30,17 +30,17 @@ export default class Index extends React.Component {
         <Navigation />
         <Home />
         <About />
+        <YourSelf />
         <Team />
-        <Statement />
-        <Service />
+        {/* <Statement /> */}
+        {/* <Service /> */}
         <Portfolio />
         <Testimonial />
-        {/* <Stats /> */}
         <Blogs />
         <Contact />
-        <Map />
+        {/* <Map /> */}
         <Footer />
-        <Login />
+        {/* <Login /> */}
       </div>
     );
   }
