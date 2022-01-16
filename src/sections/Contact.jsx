@@ -88,7 +88,7 @@ class Contact extends React.Component {
                 </div>
               </div>
               <div className="contactform">
-                <h4>Any Question ro remarks? Just Write us a message!</h4>
+                <h4>Any Question or remarks? Just Write us a message!</h4>
                 <form name="enquire" method="post" action="#">
                   <div className="row">
                     <div className="col-lg-6 col-md-6 col-sm-12 col-12">

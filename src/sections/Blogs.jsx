@@ -27,7 +27,7 @@ class Blogs extends React.Component {
                     <i className="fa fa-youtube-play"></i>
                   </a>
                 </li>
-                <li className="twitter">
+                {/* <li className="twitter">
                   <a href="#">
                     <i className="fa fa-twitter"></i>
                   </a>
@@ -36,7 +36,7 @@ class Blogs extends React.Component {
                   <a href="#">
                     <i className="fa fa-linkedin"></i>
                   </a>
-                </li>
+                </li> */}
                 <li className="facebook">
                   <a href="#">
                     <i className="fa fa-facebook"></i>
