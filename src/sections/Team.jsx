@@ -129,7 +129,7 @@ class Team extends React.Component {
                             </a>
                           </li>
                           <li>
-                            <a href="https://www.instagram.com/sahana_karthik">
+                            <a href="https://www.instagram.com/shinealongsahana">
                               <i className="fa fa-instagram"></i>
                             </a>
                           </li>
