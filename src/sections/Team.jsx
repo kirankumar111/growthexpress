@@ -1,12 +1,11 @@
-import React from 'react';
-
+import React from "react";
 
 class Team extends React.Component {
   constructor(props) {
     super();
     this.state = {
       isLoading: true,
-      patients: []
+      patients: [],
     };
   }
   async componentDidMount() {
@@ -72,6 +71,7 @@ class Team extends React.Component {
                           </li>
                           <li>
                             <a
+                              rel="noopener noreferrer"
                               href="https://www.linkedin.com/in/kirankumar111/"
                               target="_blank"
                             >
@@ -137,7 +137,7 @@ class Team extends React.Component {
                       </div>
                     </div>
                   </div>
-                  <div className="team-member">
+                  {/* <div className="team-member">
                     <img
                       src="img/team/team-2.jpg"
                       alt="Bharat Pinneti"
@@ -196,7 +196,7 @@ class Team extends React.Component {
                         </ul>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                   {/* <div className="team-member">
                       <img src="img/team/team-6.jpg" alt="Dilip Gupta" className="img-responsive"/>
                       <div className="team-member-overlay">
@@ -292,11 +292,7 @@ class Team extends React.Component {
     );
   }
   render() {
-    return (
-      <div className="TeamDiv">
-        {this.renderLander()}
-      </div>
-    );
+    return <div className="TeamDiv">{this.renderLander()}</div>;
   }
 }
 
