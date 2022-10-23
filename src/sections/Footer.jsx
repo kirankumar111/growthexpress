@@ -1,12 +1,11 @@
-import React from 'react';
-
+import React from "react";
 
 class Footer extends React.Component {
   constructor(props) {
     super();
     this.state = {
       isLoading: true,
-      patients: []
+      patients: [],
     };
   }
   async componentDidMount() {
@@ -18,33 +17,42 @@ class Footer extends React.Component {
   }
   renderLander() {
     return (
-    <footer className="text-center">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-12">
-            <p>
-              Copyright &copy; 2021 All Rights Reserved By <span>Growth Express</span> Inc
-            </p>
+      <footer className="text-center">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <p>
+                Copyright &copy; 2021 All Rights Reserved By{" "}
+                <span>Growth Express</span> Inc
+              </p>
+              <a
+                href="https://merchant.razorpay.com/policy/KNJRYOnRVGfOpN"
+                id="terms-of-service"
+                className="terms-of-service"
+                title="terms-of-service"
+                role="button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Terms Of Service
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      <a
-        href="#home"
-        id="back-to-top"
-        className="btn btn-sm btn-yellow btn-back-to-top smooth-scroll hidden-sm hidden-xs"
-        title="Home"
-        role="button"
-        ><i className="fa fa-angle-up"></i
-      ></a>
-    </footer>
+        <a
+          href="#home"
+          id="back-to-top"
+          className="btn btn-sm btn-yellow btn-back-to-top smooth-scroll hidden-sm hidden-xs"
+          title="Home"
+          role="button"
+        >
+          <i className="fa fa-angle-up"></i>
+        </a>
+      </footer>
     );
   }
   render() {
-    return (
-      <div className="FooterDiv">
-        {this.renderLander()}
-      </div>
-    );
+    return <div className="FooterDiv">{this.renderLander()}</div>;
   }
 }
 
