@@ -19,6 +19,9 @@ class Contact extends React.Component {
     return (
       <section id="contact">
         <div className="content-box-lg">
+          <div class="trustpilot-widget" data-locale="en-US" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="61461974f10cdd001d16aa19" data-style-height="100%" data-style-width="100%">
+            <a href="https://www.trustpilot.com/review/growthexpress.in" target="_blank" rel="noopener">Trustpilot</a>
+          </div>
           <div className="container">
             <div className="row">
               <div className="col-md-6">
