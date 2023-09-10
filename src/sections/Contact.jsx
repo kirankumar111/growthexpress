@@ -6,6 +6,12 @@ class Contact extends React.Component {
     this.state = {
       isLoading: true,
       patients: [],
+      name: "",
+      email: "",
+      phone: "",
+      reference: "",
+      message: "",
+      isSubmitting: false,
     };
   }
   async componentDidMount() {
@@ -15,6 +21,51 @@ class Contact extends React.Component {
 
     this.setState({ isLoading: false });
   }
+
+  handleInputChange = (event) => {
+    const { id, value } = event.target;
+    this.setState({ [id]: value });
+  };
+
+  handleSubmit = async (event) => {
+    event.preventDefault();
+    // Prevent multiple submissions while waiting for the API response
+    if (this.state.isSubmitting) return; 
+
+    this.setState({ isSubmitting: true });
+
+    try {
+      // Perform your API call here, using the form data in this.state
+      // For example, you can use the Fetch API or Axios to make the API request
+      // Replace the following with your API call code
+      const response = await fetch('https://pfubkl26oh.execute-api.ap-south-1.amazonaws.com/request', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          Name: this.state.name,
+          Email: this.state.email,
+          PhoneNumber: this.state.phone,
+          Reference: this.state.reference,
+          Reason: this.state.message,
+        }),
+      });
+
+      if (response.ok) {
+        // Handle a successful API response here
+        console.log('API call successful');
+      } else {
+        // Handle API errors here
+        console.error('API call failed');
+      }
+    } catch (error) {
+      console.error('API call error', error);
+    } finally {
+      this.setState({ isSubmitting: false });
+    }
+  };
+
   renderLander() {
     return (
       <section id="contact">
@@ -78,7 +129,7 @@ class Contact extends React.Component {
               </div>
               <div className="col-md-6">
                 <div id="contact-right">
-                  <form>
+                  <form onSubmit={this.handleSubmit}>
                     <h4>Contact Us</h4>
                     <p>
                       If your beliefs match with ours and you are looking for an
@@ -120,8 +171,8 @@ class Contact extends React.Component {
                         <input
                           type="text"
                           className="form-control"
-                          id="subject"
-                          placeholder="Subject"
+                          id="reference"
+                          placeholder="Reference"
                         />
                       </div>
                     </div>
@@ -133,7 +184,15 @@ class Contact extends React.Component {
                       ></textarea>
                     </div>
                     <div id="submit-btn">
-                      <a
+                    <button
+                      type="submit"
+                      className="btn btn-general btn-yellow"
+                      title="Submit"
+                      disabled={this.state.isSubmitting}
+                    >
+                      {this.state.isSubmitting ? "Submitting..." : "Submit"}
+                    </button>
+                      {/* <a
                         rel="noopener noreferrer"
                         className="btn btn-general btn-yellow"
                         href="#"
@@ -141,7 +200,7 @@ class Contact extends React.Component {
                         role="button"
                       >
                         Submit
-                      </a>
+                      </a> */}
                     </div>
                   </form>
                 </div>
