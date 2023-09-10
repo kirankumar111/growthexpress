@@ -60,11 +60,11 @@ class Contact extends React.Component {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          Name: this.state.name,
-          Email: this.state.email,
-          PhoneNumber: this.state.phone,
-          Reference: this.state.reference,
-          Reason: this.state.message,
+          "Name": this.state.name,
+          "Email": this.state.email,
+          "PhoneNumber": this.state.phone,
+          "Reference": this.state.reference,
+          "Reason": this.state.message,
         }),
       });
 
@@ -172,6 +172,7 @@ class Contact extends React.Component {
                           className="form-control"
                           id="email"
                           placeholder="Email Address"
+                          required
                         />
                       </div>
                     </div>
@@ -190,12 +191,22 @@ class Contact extends React.Component {
                     </div>
                     <div className="col-md-6 col-sm-6">
                       <div className="form-group">
-                        <input
-                          type="text"
-                          className="form-control"
-                          id="reference"
-                          placeholder="Reference"
-                        />
+                      <select
+                        className="form-control"
+                        id="reference"
+                        onChange={this.handleInputChange}
+                        value={ this.state.reference }
+                        placeholder="reference"
+                      >
+                        <option value="">Select a reference</option>
+                        <option value="Linkedin">LinkedIn</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="Karthik">Karthik</option>
+                        <option value="Other">Rohit</option>
+                        <option value="Other">Kiran</option>
+                        <option value="Other">Others</option>
+                      </select>
                       </div>
                     </div>
                     <div className="form-group">

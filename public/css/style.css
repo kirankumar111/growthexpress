@@ -1343,7 +1343,7 @@ ul.office-details li i {
 
 #contact-right form .form-control {
   font-family: "Open Sans", sans-serif;
-  padding: 10px 15px;
+  /* padding: 10px 15px; */
   font-size: 12px;
   line-height: 24px;
 }
