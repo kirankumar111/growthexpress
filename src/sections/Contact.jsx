@@ -29,6 +29,22 @@ class Contact extends React.Component {
 
   handleSubmit = async (event) => {
     event.preventDefault();
+    // Validate the name and phone fields
+    if (!this.state.name || !this.state.phone) {
+      if (!this.state.name) {
+        this.setState({ nameError: "Name is required" });
+      } else {
+        this.setState({ nameError: "" });
+      }
+
+      if (!this.state.phone) {
+        this.setState({ phoneError: "Phone number is required" });
+      } else {
+        this.setState({ phoneError: "" });
+      }
+
+      return;
+    }
     // Prevent multiple submissions while waiting for the API response
     if (this.state.isSubmitting) return; 
 
@@ -140,9 +156,12 @@ class Contact extends React.Component {
                       <div className="form-group">
                         <input
                           type="text"
-                          className="form-control"
+                          className={`form-control ${this.state.nameError ? "is-invalid" : ""}`}
                           id="name"
                           placeholder="Your Name"
+                          onChange={this.handleInputChange}
+                          value={this.state.name}
+                          required
                         />
                       </div>
                     </div>
@@ -160,9 +179,12 @@ class Contact extends React.Component {
                       <div className="form-group">
                         <input
                           type="text"
-                          className="form-control"
+                          className={`form-control ${this.state.phoneError ? "is-invalid" : ""}`}
                           id="phone"
                           placeholder="Phone No."
+                          onChange={this.handleInputChange}
+                          value={this.state.phone}
+                          required
                         />
                       </div>
                     </div>
