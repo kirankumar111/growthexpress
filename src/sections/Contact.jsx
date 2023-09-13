@@ -54,7 +54,7 @@ class Contact extends React.Component {
       // Perform your API call here, using the form data in this.state
       // For example, you can use the Fetch API or Axios to make the API request
       // Replace the following with your API call code
-      const response = await fetch('https://pfubkl26oh.execute-api.ap-south-1.amazonaws.com/request', {
+      const response = await fetch('https://api.growthexpress.in/request', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -87,7 +87,7 @@ class Contact extends React.Component {
       <section id="contact">
         <div className="content-box-lg">
           <div class="trustpilot-widget" data-locale="en-US" data-template-id="56278e9abfbbba0bdcd568bc" data-businessunit-id="61461974f10cdd001d16aa19" data-style-height="100%" data-style-width="100%">
-            <a href="https://www.trustpilot.com/review/growthexpress.in" target="_blank" rel="noopener">Trustpilot</a>
+            <a href="https://www.trustpilot.com/review/growthexpress.in" target="_blank" rel="noopener noreferrer">Trustpilot</a>
           </div>
           <div className="container">
             <div className="row">
@@ -107,10 +107,6 @@ class Contact extends React.Component {
                         <div className="office">
                           <h4>India</h4>
                           <ul className="office-details">
-                            <li>
-                              <i className="fa fa-mobile"></i>
-                              <span>+91-8217019267</span>
-                            </li>
                             <li>
                               <i className="fa fa-envelope"></i>
                               <span>kiran.kumar@growthexpress.in</span>
@@ -148,9 +144,7 @@ class Contact extends React.Component {
                   <form onSubmit={this.handleSubmit}>
                     <h4>Contact Us</h4>
                     <p>
-                      If your beliefs match with ours and you are looking for an
-                      opportunity, then reach us out to see if we can
-                      collaborate to create an postive impact on poeple's lives.
+                    If your values align with ours and you're seeking an exciting opportunity, we invite you to connect with us.
                     </p>
                     <div className="col-md-6 col-sm-6">
                       <div className="form-group">
