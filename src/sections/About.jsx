@@ -92,7 +92,7 @@ class About extends React.Component {
                     <h3>Vision</h3>
                     <hr />
                     <p>
-                      Leaders biggest responsibility is to devleop new leaders.
+                      Leaders biggest responsibility is to develop new leaders.
                       We believe in identifying those who can positively
                       add value to people's lives and impact the world for a
                       better cause.
