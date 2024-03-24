@@ -4,12 +4,12 @@
   "homepage": "https://www.growthexpress.in",
   "private": true,
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^1.6.8",
     "react": "^16.9.0",
     "react-bootstrap": "^1.0.0-beta.12",
     "react-dom": "^16.9.0",
     "react-router-dom": "^5.1.0",
-    "react-scripts": "3.1.2"
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "clean": "rm -rf public/bundles",
